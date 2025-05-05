@@ -4,24 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TODO</title>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <h1>Welcome to the TODO App</h1>
-    <p>This is a simple application to manage your tasks.</p>
-    <div id="app">
-      <h2>TODO List</h2>
+    <header>
+      <h1>TODOアプリ</h1>
+    </header>
+    <main>
       <ul id="todo-list"></ul>
       <form id="form">
         <input
+          id="new-todo"
           type="text"
           required
-          id="new-todo"
-          placeholder="Add a new task"
+          placeholder="散歩をする。"
           name="todo"
         />
         <button id="add-todo" type="submit">追加</button>
       </form>
-    </div>
+    </main>
     <script src="/script.js"></script>
   </body>
 </html>
