@@ -16,8 +16,9 @@ async function fetchTodos() {
 
 fetchTodos(); //一番最初にfetchTodos()を実行して、todosのデータを取得する。
 
+// フォームが送信された時に実行される関数を定義
 form.onsubmit = async (e) => {
-  e.preventDefault();
+  e.preventDefault(); // フォームがデフォルトで行う送信の挙動をキャンセル。送信の内容を自分で定義するため。
   const todo = newTodo.value;
   const response = await fetch("/todos", {
     method: "POST",
